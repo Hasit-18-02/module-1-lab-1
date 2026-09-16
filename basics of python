@@ -1,0 +1,329 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO2FpVPWzQtdeoMmMCyvsun",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Hasit-18-02/module-1-lab-1/blob/main/basics%20of%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Rt6Lz586VtT3",
+        "outputId": "bec613be-318c-4934-e008-c6eb93a7352a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HELLO WORLD\n",
+            "hello world\n",
+            "hello python\n",
+            "['hello', 'world']\n",
+            "hello world\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "'''\n",
+        "methods in string\n",
+        "upper()\n",
+        "lower()\n",
+        "replace()\n",
+        "strip()\n",
+        "split()\n",
+        "'''\n",
+        "name = \"hello world\"\n",
+        "print(name.upper())\n",
+        "print(name.lower())\n",
+        "print(name.replace(\"world\", \"python\"))\n",
+        "print(name.split())\n",
+        "print(name.strip())"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''\n",
+        "methods for list\n",
+        "append()\n",
+        "insert()\n",
+        "remove()\n",
+        "sort()\n",
+        "'''\n",
+        "num = [10, 20, 30, 20]\n",
+        "num.append(40)\n",
+        "print(num)\n",
+        "num.insert(1, 15)\n",
+        "print(num)\n",
+        "num.remove(20)\n",
+        "print(num)\n",
+        "num.sort()\n",
+        "print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M3_nPXwuWyE7",
+        "outputId": "fff9ccb0-61e8-420f-e7ec-1b6b0423bf51"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 20, 40]\n",
+            "[10, 15, 20, 30, 20, 40]\n",
+            "[10, 15, 30, 20, 40]\n",
+            "[10, 15, 20, 30, 40]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''\n",
+        "methods in set\n",
+        "add()\n",
+        "remove()\n",
+        "union()\n",
+        "intersection()\n",
+        "difference()\n",
+        "'''\n",
+        "A = {1, 2, 3}\n",
+        "B = {3, 4, 5}\n",
+        "A.add(6)\n",
+        "print(A)\n",
+        "A.remove(6)\n",
+        "print(A)\n",
+        "print(A.union(B))\n",
+        "print(A.difference(B))\n",
+        "print(A.intersection(B))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jD12SFfkXP8g",
+        "outputId": "216a6085-7b0a-4416-e3d0-4f64e7c655c0"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{1, 2, 3, 6}\n",
+            "{1, 2, 3}\n",
+            "{1, 2, 3, 4, 5}\n",
+            "{1, 2}\n",
+            "{3}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''\n",
+        "methods in dictionary\n",
+        "keys()\n",
+        "values()\n",
+        "items()\n",
+        "update()\n",
+        "pop()\n",
+        "'''\n",
+        "student = {\n",
+        "    \"name\": \"Pika\",\n",
+        "    \"age\": 20,\n",
+        "    \"marks\": 90\n",
+        "}\n",
+        "print(student.keys())\n",
+        "print(student.values())\n",
+        "print(student.items())\n",
+        "student.update({\"age\": 21})\n",
+        "print(student)\n",
+        "student.pop(\"marks\")\n",
+        "print(student)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EXTWJw6KbTuD",
+        "outputId": "392a94ea-c6e6-4fc4-8c45-7ac1c8daf23f"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dict_keys(['name', 'age', 'marks'])\n",
+            "dict_values(['Pika', 20, 90])\n",
+            "dict_items([('name', 'Pika'), ('age', 20), ('marks', 90)])\n",
+            "{'name': 'Pika', 'age': 21, 'marks': 90}\n",
+            "{'name': 'Pika', 'age': 21}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''\n",
+        "methods in tuple\n",
+        "len()\n",
+        "max()\n",
+        "min()\n",
+        "sum()\n",
+        "sorted()\n",
+        "'''\n",
+        "t = (10, 20, 20, 30, 40)\n",
+        "\n",
+        "print(len(t))\n",
+        "print(max(t))\n",
+        "print(min(t))\n",
+        "print(sum(t))\n",
+        "print(sorted(t))"
+      ],
+      "metadata": {
+        "id": "UpzO-gaHbjWT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# QUESTION 1\n",
+        "def reverse_add(A, B):\n",
+        "    reversed_A = A[::-1]\n",
+        "    return reversed_A + B\n",
+        "\n",
+        "\n",
+        "result = reverse_add(\"hello\", \"world\")\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "id": "UoUU48W7b_PX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# QUESTION 2\n",
+        "work_hours = [\n",
+        "    ('Abby', 100, 'F'),\n",
+        "    ('Billy', 400, 'M'),\n",
+        "    ('Cassie', 800, 'F'),\n",
+        "    ('Maggi', 600, 'F'),\n",
+        "    ('Alex', 500, 'M'),\n",
+        "    ('Raj', 225, 'M'),\n",
+        "    ('Penny', 920, 'F'),\n",
+        "    ('Ben', 300, 'M')\n",
+        "]\n",
+        "def highest_paid_female(work_hours):\n",
+        "    max_hours = 0\n",
+        "    worker_name = \"\"\n",
+        "\n",
+        "    for name, hours, gender in work_hours:\n",
+        "        if gender == 'F':\n",
+        "            if hours > max_hours:\n",
+        "                max_hours = hours\n",
+        "                worker_name = name\n",
+        "\n",
+        "    pay = max_hours * 20\n",
+        "    print(\"the female worker that worked the most hours is \",worker_name,\"and she should be paid\",pay)\n",
+        "\n",
+        "highest_paid_female(work_hours)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H3kgTxOkcLhJ",
+        "outputId": "b1e8bf3f-6e71-4e51-9d7a-ed77e6ab3f6f"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the female worker that worked the most hours is  Maggi and she should be paid 20000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "import numpy as np\n",
+        "\n",
+        "row1 = np.hstack([1, 1, 1, 1, 1])\n",
+        "row2 = np.hstack([2, 2, 2, 2, 2])\n",
+        "row3 = np.hstack([3, 3, 3, 3, 3])\n",
+        "row4 = np.hstack([4, 4, 4, 4, 4])\n",
+        "row5 = np.hstack([5, 5, 5, 5, 5])\n",
+        "\n",
+        "matrix = np.vstack([row1, row2, row3, row4, row5])\n",
+        "\n",
+        "print(matrix)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lU5lVYTfcxTD",
+        "outputId": "286e7654-1b21-492d-ed9d-1ba424ab44d0"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 1 1 1 1]\n",
+            " [2 2 2 2 2]\n",
+            " [3 3 3 3 3]\n",
+            " [4 4 4 4 4]\n",
+            " [5 5 5 5 5]]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
